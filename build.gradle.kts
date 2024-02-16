@@ -15,6 +15,15 @@ buildscript {
         classpath("com.github.recloudstream:gradle:-SNAPSHOT")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
     }
+
+    tasks.register("generatePluginsJson") {
+        doLast {
+            val outputFile = File("builds/plugins.json")
+            // Generate plugins.json content here
+            val pluginsJsonContent = "{\"plugins\": []}" // Example content
+            outputFile.writeText(pluginsJsonContent)
+        }
+    }
 }
 
 allprojects {
@@ -43,19 +52,19 @@ subprojects {
 
     android {
         defaultConfig {
-            minSdk = 21
+            minSdk = 26
             compileSdkVersion(33)
             targetSdk = 33
         }
 
         compileOptions {
-            sourceCompatibility = JavaVersion.VERSION_1_8
-            targetCompatibility = JavaVersion.VERSION_1_8
+            sourceCompatibility = JavaVersion.VERSION_11
+            targetCompatibility = JavaVersion.VERSION_11
         }
 
         tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
             kotlinOptions {
-                jvmTarget = "1.8" // Required
+                jvmTarget = "11" // Required
                 // Disables some unnecessary features
                 freeCompilerArgs = freeCompilerArgs +
                         "-Xno-call-assertions" +
