@@ -36,16 +36,16 @@ class FilmMakinesi : MainAPI() {
         "${mainUrl}/film-izle/fantastik-filmler-izle/page/"       to "Fantastik",
         "${mainUrl}/film-izle/polisiye-filmleri-izle/page/"       to "Polisiye Suç",
         "${mainUrl}/film-izle/korku-filmleri-izle-hd/page/"       to "Korku",
-        // "${mainUrl}/film-izle/savas/page/"                        to "Tarihi ve Savaş",
-        // "${mainUrl}/film-izle/gerilim-filmleri-izle/page/"        to "Gerilim Heyecan",
-        // "${mainUrl}/film-izle/gizemli/page/"                      to "Gizem",
-        // "${mainUrl}/film-izle/aile-filmleri/page/"                to "Aile",
-        // "${mainUrl}/film-izle/animasyon-filmler/page/"            to "Animasyon",
-        // "${mainUrl}/film-izle/western/page/"                      to "Western",
-        // "${mainUrl}/film-izle/biyografi/page/"                    to "Biyografik",
-        // "${mainUrl}/film-izle/dram/page/"                         to "Dram",
-        // "${mainUrl}/film-izle/muzik/page/"                        to "Müzik",
-        // "${mainUrl}/film-izle/spor/page/"                         to "Spor"
+         "${mainUrl}/film-izle/savas/page/"                        to "Tarihi ve Savaş",
+         "${mainUrl}/film-izle/gerilim-filmleri-izle/page/"        to "Gerilim Heyecan",
+         "${mainUrl}/film-izle/gizemli/page/"                      to "Gizem",
+         "${mainUrl}/film-izle/aile-filmleri/page/"                to "Aile",
+         "${mainUrl}/film-izle/animasyon-filmler/page/"            to "Animasyon",
+         "${mainUrl}/film-izle/western/page/"                      to "Western",
+         "${mainUrl}/film-izle/biyografi/page/"                    to "Biyografik",
+         "${mainUrl}/film-izle/dram/page/"                         to "Dram",
+         "${mainUrl}/film-izle/muzik/page/"                        to "Müzik",
+         "${mainUrl}/film-izle/spor/page/"                         to "Spor"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
