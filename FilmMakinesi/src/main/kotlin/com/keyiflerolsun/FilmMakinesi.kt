@@ -35,7 +35,7 @@ class FilmMakinesi : MainAPI() {
         "${mainUrl}/film-izle/belgesel/page/"                     to "Belgesel",
         "${mainUrl}/film-izle/fantastik-filmler-izle/page/"       to "Fantastik",
         "${mainUrl}/film-izle/polisiye-filmleri-izle/page/"       to "Polisiye Suç",
-        "${mainUrl}/film-izle/korku-filmleri-izle-hd/page/"       to "Korku",
+//        "${mainUrl}/film-izle/korku-filmleri-izle-hd/page/"       to "Korku",
          "${mainUrl}/film-izle/savas/page/"                        to "Tarihi ve Savaş",
          "${mainUrl}/film-izle/gerilim-filmleri-izle/page/"        to "Gerilim Heyecan",
          "${mainUrl}/film-izle/gizemli/page/"                      to "Gizem",
